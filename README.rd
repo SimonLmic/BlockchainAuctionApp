@@ -18,12 +18,29 @@ Blockchain Auction App has :
 
 How to install :
 install and run Ganache, it will start automatically a blockchain
-https://www.trufflesuite.com/ganache
+https://www.trufflesuite.com/ganache use version 1.2.2 
+
+Install Ganache 1.2.2 
+Install python 3.6
+pip install virtualenv
+cd BlockchainAuctionApp
+virtualenv --python= <path to python3.6>  <virtual env path>
+source venv36/bin/activate
+pip install requests
+pip install flask
+pip install numpy
+pip install rx
+pip install pandas
+pip install 'sanic==0.7.0'
+pip install 'web3==4.7.1'
+pip install 'py-solc=3.1.0'
+
 
 python router/EventService.py
 python router/EventClient.py
 Bid winner send API Request to third-party Server with 3D product URL
 
+when running python EventClient.py a database is saved in example.db 
 
 Data types :
     - publisher tools for the website
